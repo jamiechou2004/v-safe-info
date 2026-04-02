@@ -5,275 +5,257 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>V-safe Heuristic Review Visualization</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body class="min-h-screen bg-slate-50 text-slate-900">
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
   <div class="max-w-7xl mx-auto px-6 py-10">
+    <!-- Header Section -->
     <div class="mb-10">
-      <div class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm shadow-sm">
+      <div class="inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-sm font-medium shadow-sm text-slate-600">
         V-safe UX Evaluation
       </div>
-      <h1 class="mt-4 text-4xl md:text-5xl font-semibold tracking-tight">Heuristic Review Visualization</h1>
+      <h1 class="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-slate-900">Heuristic Review Visualization</h1>
       <p class="mt-4 max-w-3xl text-lg text-slate-600">
-        A website-style presentation of the V-safe public-facing experience, focused on onboarding, trust, clarity, and conversion.
+        A strategic analysis of the V-safe public-facing experience, focusing on onboarding optimization, trust building, and conversion clarity.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-4 gap-4 mb-10">
-      <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-200">
-        <div class="text-sm text-slate-500">Primary risk</div>
-        <div class="mt-2 text-xl font-semibold">Conversion blockage</div>
-        <p class="mt-2 text-slate-600 text-sm">Enrollment pause and conflicting calls to action interrupt the new-user path.</p>
+    <!-- Quick Stats / Highlights -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200 transition-hover hover:shadow-md">
+        <div class="text-xs font-bold uppercase tracking-wider text-red-500">Primary Risk</div>
+        <div class="mt-2 text-xl font-semibold">Conversion Blockage</div>
+        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Enrollment pause and conflicting calls to action interrupt the new-user path.</p>
       </div>
-      <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-200">
-        <div class="text-sm text-slate-500">Trust issue</div>
-        <div class="mt-2 text-xl font-semibold">Privacy ambiguity</div>
-        <p class="mt-2 text-slate-600 text-sm">Technical monitoring language may undermine confidence in a health context.</p>
+      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200 transition-hover hover:shadow-md">
+        <div class="text-xs font-bold uppercase tracking-wider text-amber-500">Trust Issue</div>
+        <div class="mt-2 text-xl font-semibold">Privacy Ambiguity</div>
+        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Technical monitoring language may undermine confidence in a health context.</p>
       </div>
-      <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-200">
-        <div class="text-sm text-slate-500">UX friction</div>
-        <div class="mt-2 text-xl font-semibold">Multi-step setup</div>
-        <p class="mt-2 text-slate-600 text-sm">Verification and activation patterns likely increase abandonment risk.</p>
+      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200 transition-hover hover:shadow-md">
+        <div class="text-xs font-bold uppercase tracking-wider text-blue-500">UX Friction</div>
+        <div class="mt-2 text-xl font-semibold">Multi-step Setup</div>
+        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Verification and activation patterns likely increase abandonment risk.</p>
       </div>
-      <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-200">
-        <div class="text-sm text-slate-500">Opportunity</div>
-        <div class="mt-2 text-xl font-semibold">Quick-win redesign</div>
-        <p class="mt-2 text-slate-600 text-sm">Clearer CTAs, trust copy, and guidance can improve experience without a full rebuild.</p>
+      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200 transition-hover hover:shadow-md">
+        <div class="text-xs font-bold uppercase tracking-wider text-emerald-500">Opportunity</div>
+        <div class="mt-2 text-xl font-semibold">Quick-win Redesign</div>
+        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Clearer CTAs and trust copy can improve experience without a full rebuild.</p>
       </div>
     </div>
 
+    <!-- Journey and Principles -->
     <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-6 mb-10">
-      <section class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-        <h2 class="text-2xl font-semibold">Current Journey Snapshot</h2>
-        <div class="mt-6 grid md:grid-cols-5 gap-3 text-sm">
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div class="text-xs uppercase tracking-wide text-slate-500">Step 1</div>
-            <div class="mt-2 font-medium">Awareness touchpoint</div>
+      <section class="rounded-3xl bg-white p-8 shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold text-slate-900">Current Journey Snapshot</h2>
+        <div class="mt-8 grid grid-cols-2 md:grid-cols-5 gap-3 text-xs md:text-sm">
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 flex flex-col justify-between">
+            <span class="font-bold text-slate-400">01</span>
+            <div class="mt-4 font-semibold">Awareness</div>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div class="text-xs uppercase tracking-wide text-slate-500">Step 2</div>
-            <div class="mt-2 font-medium">Landing / portal entry</div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 flex flex-col justify-between">
+            <span class="font-bold text-slate-400">02</span>
+            <div class="mt-4 font-semibold">Landing</div>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div class="text-xs uppercase tracking-wide text-slate-500">Step 3</div>
-            <div class="mt-2 font-medium">Account creation</div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 flex flex-col justify-between ring-2 ring-blue-500 ring-offset-2">
+            <span class="font-bold text-blue-500">03 (Drop-off)</span>
+            <div class="mt-4 font-semibold text-blue-700">Account</div>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div class="text-xs uppercase tracking-wide text-slate-500">Step 4</div>
-            <div class="mt-2 font-medium">Vaccine enrollment</div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 flex flex-col justify-between opacity-50">
+            <span class="font-bold text-slate-400">04</span>
+            <div class="mt-4 font-semibold">Vaccine Entry</div>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <div class="text-xs uppercase tracking-wide text-slate-500">Step 5</div>
-            <div class="mt-2 font-medium">Ongoing check-ins</div>
+          <div class="rounded-2xl border border-slate-100 bg-slate-50 p-4 flex flex-col justify-between opacity-50">
+            <span class="font-bold text-slate-400">05</span>
+            <div class="mt-4 font-semibold">Check-ins</div>
           </div>
         </div>
-        <p class="mt-5 text-slate-600 leading-7">
-          The review suggests the largest breakdown happens between the landing experience and account creation. New users are currently met with mixed system signals, limited reassurance, and unclear next steps.
+        <p class="mt-6 text-slate-600 leading-relaxed">
+          The largest breakdown happens between <strong>Landing</strong> and <strong>Account Creation</strong>. New users are currently met with mixed system signals, limited reassurance, and unclear next steps regarding the enrollment pause.
         </p>
       </section>
 
-      <section class="rounded-3xl bg-slate-900 text-white p-6 shadow-sm">
-        <h2 class="text-2xl font-semibold">Top Design Principle</h2>
-        <p class="mt-4 text-slate-300 leading-7">
-          V-safe should behave like a guided public service, not a technical system portal. The experience must emphasize clarity, reassurance, and actionability before asking users to commit effort.
+      <section class="rounded-3xl bg-slate-900 text-white p-8 shadow-xl">
+        <h2 class="text-2xl font-bold">Top Design Principle</h2>
+        <p class="mt-4 text-slate-300 leading-relaxed italic">
+          "V-safe should behave like a guided public service, not a technical system portal."
         </p>
-        <div class="mt-6 rounded-2xl bg-white/10 p-4 border border-white/10">
-          <div class="text-sm text-slate-300">Suggested future-state CTA pattern</div>
-          <div class="mt-3 space-y-2">
-            <div class="rounded-xl bg-white text-slate-900 px-4 py-3 font-medium">Log in</div>
-            <div class="rounded-xl border border-white/20 px-4 py-3">Get notified when enrollment reopens</div>
-            <div class="rounded-xl border border-white/20 px-4 py-3">Learn how V-safe works</div>
+        <div class="mt-8 rounded-2xl bg-white/5 p-5 border border-white/10">
+          <div class="text-sm font-medium text-slate-400 uppercase tracking-widest">Recommended CTA Strategy</div>
+          <div class="mt-4 space-y-3">
+            <button class="w-full rounded-xl bg-white text-slate-900 px-4 py-3 font-bold hover:bg-slate-100 transition-colors">Log In</button>
+            <button class="w-full rounded-xl border border-white/20 px-4 py-3 text-sm hover:bg-white/5 transition-colors text-left">Get notified when enrollment reopens</button>
+            <button class="w-full rounded-xl border border-white/20 px-4 py-3 text-sm hover:bg-white/5 transition-colors text-left text-slate-400">Learn how V-safe works</button>
           </div>
         </div>
       </section>
     </div>
 
+    <!-- Heuristic Findings -->
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Heuristic Findings</h2>
-      <div class="grid gap-4">
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Visibility of system status</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-red-100 text-red-700 border-red-200">High severity</span>
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-bold">Detailed Heuristic Findings</h2>
+        <div class="flex gap-2 text-xs">
+            <span class="px-2 py-1 bg-red-50 text-red-600 rounded border border-red-100 font-medium">High Impact</span>
+            <span class="px-2 py-1 bg-amber-50 text-amber-600 rounded border border-amber-100 font-medium">Medium Impact</span>
+        </div>
+      </div>
+      
+      <div class="grid gap-6">
+        <!-- Item 1 -->
+        <div class="group rounded-3xl bg-white p-6 shadow-sm border border-slate-200 hover:border-blue-200 transition-all">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <h3 class="text-xl font-bold text-slate-800">1. Visibility of system status</h3>
+            <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700">Critical</span>
           </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Enrollment is paused, but the interface still suggests new users can register immediately, creating a misleading path and broken expectation.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Blocks conversion and increases frustration for first-time visitors.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Replace the conflicting CTA with a maintenance-mode state: Log in, Learn more, and Notify me when enrollment reopens.</p></div>
+          <div class="mt-6 grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">Observation</div>
+              <p class="text-slate-700 leading-relaxed">Enrollment is paused, but buttons still suggest immediate registration, creating a broken expectation loop.</p>
+            </div>
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">UX Impact</div>
+              <p class="text-slate-700 leading-relaxed">High bounce rate and erosion of brand trust for first-time visitors seeking help.</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+              <div class="font-bold text-blue-600 uppercase text-[10px] tracking-widest mb-2">Recommendation</div>
+              <p class="text-slate-700 leading-relaxed italic font-medium">"Switch to Maintenance/Info mode: explain the pause and capture intent via notification signup."</p>
+            </div>
           </div>
         </div>
 
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Match between system and real world</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-red-100 text-red-700 border-red-200">High severity</span>
+        <!-- Item 2 -->
+        <div class="group rounded-3xl bg-white p-6 shadow-sm border border-slate-200 hover:border-blue-200 transition-all">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <h3 class="text-xl font-bold text-slate-800">2. Match between system and real world</h3>
+            <span class="inline-flex items-center rounded-full bg-red-100 px-3 py-1 text-xs font-bold text-red-700">Critical</span>
           </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Security and monitoring language feels technical and intimidating for a public health experience.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Reduces trust at the moment users decide whether to proceed.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Add plain-language privacy and security microcopy near the CTA to explain how health data is protected.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">User control and freedom</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">New users have limited alternative pathways during enrollment pause, and task expectations are not visible up front.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Users may feel trapped, uncertain, or forced to leave the site.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Show clear options such as Learn how V-safe works, What you need before starting, and Get updates.</p></div>
+          <div class="mt-6 grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">Observation</div>
+              <p class="text-slate-700 leading-relaxed">Privacy language is heavy on technical/security jargon rather than healthcare reassurance.</p>
+            </div>
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">UX Impact</div>
+              <p class="text-slate-700 leading-relaxed">Users may feel 'monitored' rather than 'cared for,' leading to defensive data entry.</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+              <div class="font-bold text-blue-600 uppercase text-[10px] tracking-widest mb-2">Recommendation</div>
+              <p class="text-slate-700 leading-relaxed italic font-medium">"Introduce plain-language microcopy: 'Your data helps keep everyone safe—here is how we protect it.'"</p>
+            </div>
           </div>
         </div>
 
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Consistency and standards</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
+        <!-- Item 3 -->
+        <div class="group rounded-3xl bg-white p-6 shadow-sm border border-slate-200 hover:border-blue-200 transition-all">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <h3 class="text-xl font-bold text-slate-800">3. Error prevention & recovery</h3>
+            <span class="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-700">Serious</span>
           </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Messaging across materials and portal states is inconsistent, especially around device access and navigation labels.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Creates unnecessary confusion and weakens credibility.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Standardize device messaging, CTA wording, banners, and unauthenticated navigation patterns.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Error prevention</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-red-100 text-red-700 border-red-200">High severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">The account creation and vaccine-entry process appears multi-step and high-risk for input mistakes.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Errors may lead to abandonment or inaccurate submissions.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Use inline validation, review-before-submit, and clearer field formatting guidance.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Recognition rather than recall</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Users may need to remember vaccine details, eligibility timing, and check-in rules without enough in-context support.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Raises cognitive load, especially for caregivers managing dependents.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Add a visible checklist of what users need before starting and key timing rules.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Flexibility and efficiency of use</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">The flow supports multiple devices, but the overall onboarding still feels heavier than a lightweight check-in service should.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Reduces efficiency and increases drop-off during setup.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Add step indicators, time estimates, and simplify verification where possible.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Aesthetic and minimalist design</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Long notices and dense interface regions compete with primary actions.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Weakens CTA clarity and burdens mobile users.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Progressively disclose policy text and keep the main task visually dominant.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Help users recognize and recover from errors</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-red-100 text-red-700 border-red-200">High severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Users may face expiring codes, expired links, or failed verification with limited recovery guidance.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Interrupts onboarding and harms sustained participation.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Provide clearer recovery states, resend-code logic, and next-step guidance for missed check-ins.</p></div>
-          </div>
-        </div>
-
-        <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-            <h3 class="text-xl font-semibold">Help and documentation</h3>
-            <span class="inline-flex w-fit rounded-full border px-3 py-1 text-sm font-medium bg-amber-100 text-amber-700 border-amber-200">Medium severity</span>
-          </div>
-          <div class="mt-4 grid md:grid-cols-3 gap-4 text-sm leading-6">
-            <div><div class="font-medium text-slate-500">Observed issue</div><p class="mt-1 text-slate-700">Support exists, but help is not sufficiently integrated into the main decision flow.</p></div>
-            <div><div class="font-medium text-slate-500">Impact</div><p class="mt-1 text-slate-700">Users may leave before finding answers.</p></div>
-            <div><div class="font-medium text-slate-500">Recommended fix</div><p class="mt-1 text-slate-700">Surface contextual help above the fold and group common issues into quick-access links.</p></div>
+          <div class="mt-6 grid md:grid-cols-3 gap-8 text-sm">
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">Observation</div>
+              <p class="text-slate-700 leading-relaxed">Verification codes and vaccine entry involve multi-step precision without enough 'safety nets'.</p>
+            </div>
+            <div>
+              <div class="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-2">UX Impact</div>
+              <p class="text-slate-700 leading-relaxed">Higher support ticket volume and abandonment due to technical setup friction.</p>
+            </div>
+            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+              <div class="font-bold text-blue-600 uppercase text-[10px] tracking-widest mb-2">Recommendation</div>
+              <p class="text-slate-700 leading-relaxed italic font-medium">"Implement inline validation, 'Save for later' options, and clearer 'Resend Code' prompts."</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-10 grid lg:grid-cols-[0.9fr_1.1fr] gap-6">
-      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-        <h2 class="text-2xl font-semibold">Trust Review</h2>
-        <p class="mt-4 text-slate-600 leading-7">
-          The experience currently mixes public-health reassurance with portal-security language. From a UX standpoint, these are not equivalent signals. Users need an explicit bridge that explains how system monitoring and health-data confidentiality coexist.
+    <!-- Strategic Roadmap -->
+    <section class="mb-10 grid lg:grid-cols-2 gap-8">
+      <div class="rounded-3xl bg-white p-8 shadow-sm border border-slate-200">
+        <h2 class="text-2xl font-bold mb-4">Trust Infrastructure</h2>
+        <p class="text-slate-600 leading-relaxed mb-6">
+          The psychological gap between "data monitoring" and "health support" must be bridged. We recommend a permanent trust banner in the footer or near account actions.
         </p>
-        <div class="mt-5 rounded-2xl bg-slate-50 p-4 border border-slate-200">
-          <div class="font-medium">Recommended trust content block</div>
-          <p class="mt-2 text-sm text-slate-600 leading-6">
-            “Your V-safe responses are confidential and used to support vaccine-safety monitoring. Security monitoring protects the service and does not mean your health responses are public.”
-          </p>
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-2xl">
+            <div class="text-blue-900 font-bold mb-2">Proposed Messaging:</div>
+            <p class="text-blue-800 text-sm leading-relaxed italic">
+                "Your V-safe responses are confidential and used strictly for vaccine-safety monitoring. Security protocols are in place to protect the platform, ensuring your personal health data remains private."
+            </p>
         </div>
       </div>
 
-      <div class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-        <h2 class="text-2xl font-semibold">Prioritized Action Plan</h2>
-        <div class="mt-4 overflow-x-auto">
+      <div class="rounded-3xl bg-white p-8 shadow-sm border border-slate-200 overflow-hidden">
+        <h2 class="text-2xl font-bold mb-4">Prioritized Action Plan</h2>
+        <div class="overflow-x-auto">
           <table class="w-full text-sm">
             <thead>
-              <tr class="text-left text-slate-500 border-b border-slate-200">
-                <th class="py-3 pr-4">Priority</th>
-                <th class="py-3 pr-4">Action</th>
-                <th class="py-3 pr-4">Impact</th>
-                <th class="py-3">Effort</th>
+              <tr class="text-left text-slate-400 border-b border-slate-100">
+                <th class="pb-3 font-bold uppercase text-[10px] tracking-widest">Priority</th>
+                <th class="pb-3 font-bold uppercase text-[10px] tracking-widest">Task</th>
+                <th class="pb-3 font-bold uppercase text-[10px] tracking-widest">Impact</th>
               </tr>
             </thead>
-            <tbody>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P0</td><td class="py-3 pr-4 text-slate-700">Clarify enrollment status and CTA logic</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Low–Medium</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P0</td><td class="py-3 pr-4 text-slate-700">Add plain-language trust and privacy explanation near sign-up area</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Low</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P1</td><td class="py-3 pr-4 text-slate-700">Add what-you-need checklist and eligibility summary</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Low</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P1</td><td class="py-3 pr-4 text-slate-700">Improve verification flow with clearer recovery states</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Medium</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P1</td><td class="py-3 pr-4 text-slate-700">Add step indicator and completion estimate</td><td class="py-3 pr-4 text-slate-700">Medium–High</td><td class="py-3 text-slate-700">Medium</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P2</td><td class="py-3 pr-4 text-slate-700">Standardize navigation, device messaging, and visual hierarchy</td><td class="py-3 pr-4 text-slate-700">Medium</td><td class="py-3 text-slate-700">Medium</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P2</td><td class="py-3 pr-4 text-slate-700">Run accessibility and mobile audit with implementation fixes</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Medium</td></tr>
-              <tr class="border-b border-slate-100 align-top"><td class="py-3 pr-4 font-semibold">P3</td><td class="py-3 pr-4 text-slate-700">Instrument funnel analytics and performance monitoring</td><td class="py-3 pr-4 text-slate-700">High</td><td class="py-3 text-slate-700">Medium</td></tr>
+            <tbody class="divide-y divide-slate-100">
+              <tr>
+                <td class="py-4 font-bold text-red-500">P0</td>
+                <td class="py-4 text-slate-700">Fix CTA logic for paused enrollment</td>
+                <td class="py-4 text-slate-500">Immediate</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-bold text-red-500">P0</td>
+                <td class="py-4 text-slate-700">Deploy plain-language privacy microcopy</td>
+                <td class="py-4 text-slate-500">Immediate</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-bold text-amber-500">P1</td>
+                <td class="py-4 text-slate-700">Add 'What You Need' onboarding checklist</td>
+                <td class="py-4 text-slate-500">High</td>
+              </tr>
+              <tr>
+                <td class="py-4 font-bold text-slate-400">P2</td>
+                <td class="py-4 text-slate-700">Standardize navigation & device labels</td>
+                <td class="py-4 text-slate-500">Medium</td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <section class="rounded-3xl bg-white p-6 shadow-sm border border-slate-200">
-      <h2 class="text-2xl font-semibold">Recommended Success Metrics</h2>
-      <div class="mt-5 grid md:grid-cols-4 gap-4">
-        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
-          <div class="font-medium">Landing → CTA</div>
-          <p class="mt-2 text-sm text-slate-600 leading-6">How many visitors choose the intended next step</p>
+    <!-- Success Metrics -->
+    <section class="rounded-3xl bg-slate-100 p-8 border border-slate-200">
+      <h2 class="text-2xl font-bold text-slate-800 mb-8">Recommended Success Metrics</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="space-y-2">
+            <div class="text-3xl font-bold text-blue-600">--%</div>
+            <div class="font-bold text-sm text-slate-800">CTA Conversion</div>
+            <p class="text-xs text-slate-500 leading-relaxed">Percentage of landing page visitors who engage with primary actions.</p>
         </div>
-        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
-          <div class="font-medium">Start → Account created</div>
-          <p class="mt-2 text-sm text-slate-600 leading-6">Completion through verification and activation</p>
+        <div class="space-y-2">
+            <div class="text-3xl font-bold text-blue-600">--%</div>
+            <div class="font-bold text-sm text-slate-800">Verification Completion</div>
+            <p class="text-xs text-slate-500 leading-relaxed">Success rate from 'Sign Up' to 'Account Activated'.</p>
         </div>
-        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
-          <div class="font-medium">Account → Vaccine enrolled</div>
-          <p class="mt-2 text-sm text-slate-600 leading-6">Whether users finish setup</p>
+        <div class="space-y-2">
+            <div class="text-3xl font-bold text-blue-600">--%</div>
+            <div class="font-bold text-sm text-slate-800">Enrollment Depth</div>
+            <p class="text-xs text-slate-500 leading-relaxed">How many users finish adding vaccine info after account creation.</p>
         </div>
-        <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
-          <div class="font-medium">Enrollment → First check-in</div>
-          <p class="mt-2 text-sm text-slate-600 leading-6">Whether the system sustains early participation</p>
+        <div class="space-y-2">
+            <div class="text-3xl font-bold text-blue-600">--%</div>
+            <div class="font-bold text-sm text-slate-800">Retention Sustain</div>
+            <p class="text-xs text-slate-500 leading-relaxed">Users completing the first 7-day check-in cycle.</p>
         </div>
       </div>
     </section>
   </div>
+  
+  <footer class="mt-20 py-10 border-t border-slate-200 text-center text-slate-400 text-sm">
+    <p>&copy; 2024 V-safe UX Strategy Review. Confidential Presentation.</p>
+  </footer>
 </body>
 </html>
